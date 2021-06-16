@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OkCore",
+        "repositoryURL": "https://github.com/OkHi/ios-core-dev",
+        "state": {
+          "branch": null,
+          "revision": "a673020edb723b1d557efd356ded37611250d5f2",
+          "version": "1.0.5"
+        }
+      },
+      {
+        "package": "OkCollect",
+        "repositoryURL": "https://github.com/OkHi/ios-okcollect-dev",
+        "state": {
+          "branch": null,
+          "revision": "52bccfccee9cef34930c0b776af0e729852af829",
+          "version": "1.0.5"
+        }
+      },
+      {
+        "package": "OkVerify",
+        "repositoryURL": "https://github.com/OkHi/ios-okverify-dev",
+        "state": {
+          "branch": null,
+          "revision": "31635fb665b991ead8993aa504ed34f51094dd29",
+          "version": "1.0.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

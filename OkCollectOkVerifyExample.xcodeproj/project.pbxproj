@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		6D9B5D4D2679ED2C00884AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9B5D4B2679ED2C00884AF0 /* Main.storyboard */; };
 		6D9B5D4F2679ED2D00884AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D9B5D4E2679ED2D00884AF0 /* Assets.xcassets */; };
 		6D9B5D522679ED2D00884AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9B5D502679ED2D00884AF0 /* LaunchScreen.storyboard */; };
+		6D9B5D5B2679EF6600884AF0 /* OkCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D9B5D5A2679EF6600884AF0 /* OkCore */; };
+		6D9B5D5E2679EF9C00884AF0 /* OkCollect in Frameworks */ = {isa = PBXBuildFile; productRef = 6D9B5D5D2679EF9C00884AF0 /* OkCollect */; };
+		6D9B5D612679EFC900884AF0 /* OkVerify in Frameworks */ = {isa = PBXBuildFile; productRef = 6D9B5D602679EFC900884AF0 /* OkVerify */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9B5D5B2679EF6600884AF0 /* OkCore in Frameworks */,
+				6D9B5D612679EFC900884AF0 /* OkVerify in Frameworks */,
+				6D9B5D5E2679EF9C00884AF0 /* OkCollect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = OkCollectOkVerifyExample;
+			packageProductDependencies = (
+				6D9B5D5A2679EF6600884AF0 /* OkCore */,
+				6D9B5D5D2679EF9C00884AF0 /* OkCollect */,
+				6D9B5D602679EFC900884AF0 /* OkVerify */,
+			);
 			productName = OkCollectOkVerifyExample;
 			productReference = 6D9B5D422679ED2C00884AF0 /* OkCollectOkVerifyExample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +121,11 @@
 				Base,
 			);
 			mainGroup = 6D9B5D392679ED2B00884AF0;
+			packageReferences = (
+				6D9B5D592679EF6600884AF0 /* XCRemoteSwiftPackageReference "ios-core-dev" */,
+				6D9B5D5C2679EF9C00884AF0 /* XCRemoteSwiftPackageReference "ios-okcollect-dev" */,
+				6D9B5D5F2679EFC900884AF0 /* XCRemoteSwiftPackageReference "ios-okverify-dev" */,
+			);
 			productRefGroup = 6D9B5D432679ED2C00884AF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +357,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D9B5D592679EF6600884AF0 /* XCRemoteSwiftPackageReference "ios-core-dev" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OkHi/ios-core-dev";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+		6D9B5D5C2679EF9C00884AF0 /* XCRemoteSwiftPackageReference "ios-okcollect-dev" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OkHi/ios-okcollect-dev";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+		6D9B5D5F2679EFC900884AF0 /* XCRemoteSwiftPackageReference "ios-okverify-dev" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OkHi/ios-okverify-dev";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D9B5D5A2679EF6600884AF0 /* OkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D9B5D592679EF6600884AF0 /* XCRemoteSwiftPackageReference "ios-core-dev" */;
+			productName = OkCore;
+		};
+		6D9B5D5D2679EF9C00884AF0 /* OkCollect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D9B5D5C2679EF9C00884AF0 /* XCRemoteSwiftPackageReference "ios-okcollect-dev" */;
+			productName = OkCollect;
+		};
+		6D9B5D602679EFC900884AF0 /* OkVerify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D9B5D5F2679EFC900884AF0 /* XCRemoteSwiftPackageReference "ios-okverify-dev" */;
+			productName = OkVerify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D9B5D3A2679ED2B00884AF0 /* Project object */;
 }

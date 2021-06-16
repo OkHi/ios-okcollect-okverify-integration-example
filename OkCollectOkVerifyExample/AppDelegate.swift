@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import OkCore
+import OkCollect
+import OkVerify
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let okHiAppContext = OkHiAppContext().withAppMeta(name: "My Awesome App", version: "1.0.0", build: "1")
+        let okHiAuth = OkHiAuth(
+            branchId: "",
+            clientKey: "",
+            environment: .sandbox // change to prod once ready to go live!
+            appContext: okHiAppContext
+        )
+        OkHiCollect.initialize(with: okHiAuth)
+        OkHiVerify.initialize(with: okHiAuth) // include this!
         return true
     }
 
